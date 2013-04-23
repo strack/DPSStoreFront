@@ -11,7 +11,7 @@ $(document).ready(function() {
 			datatype: "xml",
 			// NOTE: the accountId is critical to getting the correct folio library. 
 			// You will need to modify this accordingly for your new application.
-			url: "http://lighthouse.adobe.com/dps/v2_library_store_templates/fulfillment_proxy.php?accountId=78e854ef3b4342d8a49f3fc51a898fb0",
+			url: "http://lighthouse.adobe.com/dps/v2_library_store_templates/fulfillment_proxy.php?accountId=",
 			data: "",
 			success: function(xhresp,stat) {
 				// Set a flag for the API availability in the ADOBE namespace.
