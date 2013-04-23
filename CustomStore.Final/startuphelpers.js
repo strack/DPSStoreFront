@@ -1,3 +1,17 @@
+/*
+
+Steps to creating a custom storefront:
+1- Set up the user / application
+2- find your application ID: 
+3- build your folio(s) and publish them, with the proper filter ID.
+4- Build our custom storefront HTML template / text offline
+5- Build our custom application / test online
+6- cleanup (removing external source links)
+7- deploy
+
+
+*/
+
 
 var ADOBE = ADOBE || {};
 
