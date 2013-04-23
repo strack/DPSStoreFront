@@ -13,11 +13,16 @@ ADOBE.DPSController = function(){
 	broker.init = function(_r,xdoc)
 	{
 		
+		// We declare the renderer here, if it wasn't passed in the arguments.
 		if (!arguments.length) _r = new ADOBE.Folios('#folios');
 		
 
+		// if it was passed, we will set the current Renderer = the passed renderer.
 		broker.renderer(_r);
 		
+
+		// Here we check to see if we're going to render using the AdobeLibraryAPI, or the shim.
+		// This matters, because if it's the real deal, we have listeners to set up.
 		if (ADOBE.isAPIAvailable){
 			
 			broker.onlineLoad();
@@ -308,24 +313,3 @@ ADOBE.DPSController = function(){
 
 
 
-/*// Sort the folios descending.
-		var list = adobeDPS.libraryService.folioMap.sort(function (a, b) {
-			if (a.publicationDate < b.publicationDate)
-				return 1;
-			else if (a.publicationDate > b.publicationDate)
-				return -1;
-			else
-				return 0;
-		});
-		// list is an associative array so put them in a regular array.
-		for (var i in list) {
-			var folio = list[i];
-			addFolio(folio);
-		}
-		// Add a listener for when folios are added. This does not correspond to when
-		// a new folio is pushed rather when the viewer is aware of new folios.
-		adobeDPS.libraryService.folioMap.addedSignal.add(function(folios) {
-			for (var i = 0; i < folios.length; i++) {
-				addFolio(folios[i]);
-			}
-		}, this);*/
