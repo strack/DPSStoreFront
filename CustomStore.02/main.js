@@ -28,6 +28,7 @@ $(document).ready(function() {
 			}
 		});
 	}
+
     
 	// To test on the desktop remove the JavaScript include for AdobeLibraryAPI.js in index.html. this will cause adobeDPS to be undefined
 	if (typeof adobeDPS == "undefined"){ // Call init() immediately. This will be the case for dev on the desktop.

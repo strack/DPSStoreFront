@@ -40,18 +40,7 @@ if (e == null)
 	// The main rendering code
 	folios.render = function (_d){
 
-		_.each(_d,function(d,i){
-			$('#folios').append('<div class="folioCard"> Title: '+d.title+'</div>');
-			var newCard = $($('.folioCard')[i]);
-			
-
-			//TODO: waaay too much data... let's simplify.
-			_.each(_.keys(d),function(k,i){
-				newCard.append('<div>'+k+': '+d[k]+'</div>');
-			});
-
-
-		});
+		//TODO: Initial Text Render (dial tone)
 
 
 

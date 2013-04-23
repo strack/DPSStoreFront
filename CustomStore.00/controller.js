@@ -99,12 +99,10 @@ ADOBE.DPSController = function(){
 		if (foliolist) foliolist.push(folio);
 		var datItem = ADOBE.datumFromDPS(folio);
 
-		
-
-		// we need to add the previewImageURL logic, which is asynchronous
-		// we do that here by checking to see if the image download is complete, and then updating the folioData if so.
 		var transaction = folio.getPreviewImage(287, 250, false);
 		
+		// we need to add the previewImageURL logic, which is asynchronous
+		// we do that here by checking to see if the image download is complete, and then updating the folioData if so.
 		transaction.completedSignal.addOnce(function(transaction) {
 			if (transaction.state == adobeDPS.transactionManager.transactionStates.FINISHED) {
 				var tfolio = broker.folioData(transaction.folio.id);
@@ -113,8 +111,6 @@ ADOBE.DPSController = function(){
 				//$('#ppane-'+transaction.folio.id).css('background-image','url('+transaction.previewImageURL+')');
 			}
 		});
-
-		
 		if (datItem) currentData.push(datItem);
 
 		// same thing here, we only need to update if the filter matches or is absent.

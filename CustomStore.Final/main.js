@@ -1,16 +1,3 @@
-var ADOBE = ADOBE || {};
-
-//  This is the filter you want to apply to all of your folios. It corresponds to the productId in Folio Producer
-ADOBE.FolioFilter = '';
-
-
-function displog(txt){
-	var curtxt = $('#displog').text();
-	curtxt +=txt + "---     ";
-	$('#displog').text(curtxt);
-}
-
-
 // This code checks to see if you are online. Additionally, it will
 // read from your XML public feed if you are in development mode 
 // (if you comment out the AdobeLibraryAPI.js library),

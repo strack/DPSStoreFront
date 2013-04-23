@@ -176,12 +176,34 @@ if (e == null)
 			ADOBE.liveController.openFolio(e.id);
 		});
 
+
+
+		
+		//We now hook up all the click events, touch events, etc - for just a bit of animation.
+		/*.on('mousedown',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',true);
+		}).on('touchstart',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',true);
+		}).on('mouseout',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',false);
+		}).on('click',function(e){
+			
+			ADOBE.liveController.openFolio(e.id);
+		}).on('mouseup',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',false);
+		}).on('touchend',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',false);
+		}).on('touchcancel',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',false);
+		}).on('touchleave',function(e){
+			$($(this).data('folioid')).toggleClass('clicky',false);
+		});*/
 	}
 
 	updateFolioContent = function(sel,d,i)
 	{
 
-		//sel.style('opacity',0);
+		sel.style('opacity',0);
 		// we update the ID
 		sel.attr('id',function(d){return d.id;});
 
@@ -227,10 +249,10 @@ if (e == null)
 		.text(function(d){return d.description;});
 
 
-		// sel
-		// .transition()
-		// .duration(500)
-		// .style('opacity',1);
+		sel
+		.transition()
+		.duration(500)
+		.style('opacity',1);
 	}
 
 	

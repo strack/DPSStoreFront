@@ -133,21 +133,6 @@ body {
 	display:inherit;
 }
 
-.filterbutton{
-	display:inline-block;
-	float:left;
-	font-size:10px;
-	height:20px;
-	width:80px;
-	margin-top:5px;
-	margin-left: 5px;
-	border-radius: 3px;
-	color:white;
-	text-align: center;
-	line-height: 2em;
-	background-color: rgba(238,153,51,1);
-}
-
 
 @-webkit-keyframes glow
 { 
