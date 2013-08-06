@@ -102,6 +102,20 @@ ADOBE.DPSController = function(){
 
 		// TODO: we need to add the previewImageURL logic, which is asynchronous
 		// we do that here by checking to see if the image download is complete, and then updating the folioData if so.
+		var transaction = folio.getPreviewImage(287, 250, false);
+		
+		transaction.completedSignal.addOnce(function(transaction) {
+			if (transaction.state == adobeDPS.transactionManager.transactionStates.FINISHED) {
+				var tfolio = broker.folioData(transaction.folio.id);
+
+
+
+				tfolio.previewImageURL = transaction.previewImageURL;
+				broker.updateFolioData(tfolio,true);
+				//$('#ppane-'+transaction.folio.id).css('background-image','url('+transaction.previewImageURL+')');
+			}
+		});
+
 		
 		if (datItem) 
 			{	
