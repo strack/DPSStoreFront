@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>Whitelabel University</title>
+
+
+<!-- Style Sheets for testing, and for the final product on iPad, etc. -->
+<!-- Comment out the unused spreadsheets, and remember to ultimately use your local copy-->
+<!-- <link rel="stylesheet" href="http://too11.com/dps/dialtone.css"> -->
+<link rel="stylesheet" href="iPadmain-home.css">
+<link rel="stylesheet" href="iPadmain-it.css" disabled="disabled">
+<link rel="stylesheet" href="iPadmain-health.css" disabled="disabled">
+<!-- <link rel="stylesheet" href="iPadmain.css"> -->
+
+<!-- the base libraries we need to run our structure / logic -->
+<!-- these will always be local (but could be remote if you wish) -->
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+<script type="text/javascript" src="d3.v2.min.js"></script>
+<script type="text/javascript" src="ba-bbq.min.js"></script>
+
+
+<!--This is the Adobe storefront library API code. Comment it out for dev testing -->
+<!-- <script type="text/javascript" src="AdobeLibraryAPI.js"></script> -->
+
+<!--These are the folio-specific js files, used to create the structure on the page. -->
+<!--Remote files are listed here:
+<script type="text/javascript" src="http://too11.com/dps/shim.js"></script>
+<script type="text/javascript" src="http://too11.com/dps/renderer.js"></script>
+<script type="text/javascript" src="http://too11.com/dps/controller.js"></script>
+<script type="text/javascript" src="http://too11.com/dps/startuphelpers.js"></script>
+<script type="text/javascript" src="http://too11.com/dps/main.js"></script> -->
+
+    
+<script src="http://use.edgefonts.net/open-sans:n3,i3,n4,i4,n7,i7,n8.js"></script>
+
+<!-- local files are listed here: -->
+ <script type="text/javascript" src="shim.js"></script>
+<script type="text/javascript" src="renderer.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+<script type="text/javascript" src="startuphelpers.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+</head>
+<body>
+<div style="display:none;" id="top"></div>
+    
+
+<a href="#"><div id="top-new">
+    <!--<div class="filters">
+        <div class="menubutton">STATUS</div>
+        
+        <div data-filter="Adobe Edge" data-banner="banner-return.png" data-deploystatus="return" class="filterbutton no-child">On the way home
+        </div>
+        
+        <div data-filter="Adobe Edge" data-banner="banner-deployed.png" data-deploystatus="deployed" class="filterbutton no-child">Deployed
+        </div>
+        
+        <div data-filter="Adobe Edge" data-banner="banner-reserve.png" data-deploystatus="reserve" class="filterbutton no-child">Reserve
+        </div>
+    
+    </div>-->
+    
+
+</div></a>
+
+<div id="homepage">
+<h1 class="title">WHERE ARE YOU GOING?</h1>
+    
+<div class="colleges">
+    <div class="college"><a href="#business"><img src="college-01.png"/></a></div>
+    <div class="college"><a href="#teachers"><img src="college-02.png"/></a></div>
+    <div class="college"><a href="#health"><img src="college-03.png"/></a></div>
+    <div class="college"><a href="#it"><img src="college-04.png"/></a></div>
+</div>
+</div>
+
+<div id="subpage" >
+<div id="banner"><div id="displog"></div>
+
+<div class="information-panel">
+    <div class="links-panel">
+        <h5>LEARN MORE ABOUT WU</h5>
+        <ul>
+            <li>ADMISSIONS</li>
+            <li>TUITION & FINANCIAL AID</li>
+            <li>CERTIFICATION PROGRAMS</li>
+            <li>ABOUT WU</li>
+        </ul>
+    </div>
+    <div class="apply-button">APPLY NOW</div>
+</div>
+</div>
+<div id="folios"></div>
+</div>
+<!--<div id="folios"></div>-->
+    
+    <!--
+<div id="footer">
+    <div class="tabs">
+        <div class="tab" id="library">LIBRARY</div>
+        <div class="tab" id="catalog">CATALOG</div>
+        <a href="testdrive.html"><div class="tab" id="testdrive">TEST DRIVE</div></a>
+    </div>
+</div>
+    -->
+</body>
+</html>

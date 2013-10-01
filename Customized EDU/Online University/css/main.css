@@ -1,0 +1,272 @@
+* {
+    font-family: open-sans, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-size: 100%;
+    color: #EEE;
+    background-color: #000;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: open-sans, sans-serif;
+}
+h1, h2, h3 {
+    font-family: open-sans, sans-serif;
+}
+h1, h2 {
+    font-size: 2.1vw;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+p {
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+/*
+::-webkit-scrollbar {
+    width: 6px;
+    height:6px;
+    background: none;
+}
+ 
+::-webkit-scrollbar-track {
+    background: none;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,255,255,0.1); 
+}
+*/
+/* ================ BASE ================ */
+header {
+    position: fixed;
+    z-index: 999;    
+    top: 15px;
+    left: 10px;
+    width: 100%;
+        
+    font-size: 1.0em;
+    font-weight:400;
+    text-shadow:0px 1px 2px rgba(0,0,0,0.35);
+}
+header img {
+    height: 40px;
+    margin-right: 10px;
+}
+.layer {
+    position: absolute;
+    display: inline-block;
+    width: 205%;
+    height: 100%;
+    padding: 3% 0 2%;
+    
+}
+
+.hero-layer {
+    z-index: 10;
+}
+
+.tiles-layer {
+    z-index: 20;
+}
+.column {
+    display: inline-block;
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+}
+.column:first-child {
+    margin-left: 340px;
+}
+.column.wide {
+    width: 480px;
+}
+.hero-content {
+    z-index: 11;
+    width: 280px;
+    margin-left: 0px;
+    margin-top:0px;
+    position: absolute;
+    font-size: 2em;
+    font-weight:300;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+}
+.tile {
+    margin-top: 20px;
+    position: relative;
+    
+    background: #efefef;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2), inset 0px 2px 0px 0px #fff;
+    border-radius:4px;
+    
+    color: #000;
+    
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.tile h3 {
+    margin:0;
+    padding: 10px 20px 5px;
+    color: #ca2345;
+    text-shadow: 0px 1px 0px #fff;
+}
+.tile p {
+    margin:0;
+    padding: 5px 20px;
+    color: #444;
+}
+.tile a.download-button {
+    position:absolute;
+    text-align: center;
+    bottom:10px;
+    width: 220px;
+    margin: 0 10px;
+    padding:10px 20px;
+    border-radius:3px;
+    
+    background: rgb(41,137,216);
+    background: -moz-linear-gradient(top, rgba(41,137,216,1) 10%, rgba(30,87,153,1) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(41,137,216,1)), color-stop(90%,rgba(30,87,153,1)));
+    background: -webkit-linear-gradient(top, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
+    background: -o-linear-gradient(top, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
+    background: -ms-linear-gradient(top, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
+    background: linear-gradient(to bottom, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
+    
+    color: rgba(255,255,255,0.8);
+    font-weight:700;
+    font-size:0.9em;
+    letter-spacing:2px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+    
+    animation: blip 5s ease-in-out infinite;
+    -webkit-animation: blip 5s ease-in-out infinite;
+    
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.tile a.download-button:active {
+    color: rgba(255,255,255,1);
+    
+    background: rgb(41,137,216);
+    background: -moz-linear-gradient(top, rgba(46,142,221,1) 10%, rgba(30,87,153,1) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(46,142,221,1)), color-stop(90%,rgba(30,87,153,1)));
+    background: -webkit-linear-gradient(top, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
+    background: -o-linear-gradient(top, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
+    background: -ms-linear-gradient(top, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
+    background: linear-gradient(to bottom, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
+}
+.tile.small {
+    height: 210px;
+}
+.tile.medium {
+    height: 420px;
+}
+.tile.big {
+    height: 650px;
+}
+.tile:active {
+    background: #fff;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.4), inset 0px 2px 0px 0px #fff;
+}
+.tile img.cover {
+    width:100%;
+    border-radius:3px;
+    opacity:0.9;
+    
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.tile:active img.cover {
+    opacity:1;
+}
+.tile.medium img.cover, .tile.big img.cover {
+    box-shadow: 0px 1px 0px 0px #fff;
+}
+/* ================ MENU / SECTIONS ================ */
+.menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.menu-item {
+    float:left;
+    padding: 0px 10px;
+}
+
+
+/* ================ PHOTOGRAPHY PARALLAX ================ */
+.page-1 .background-layer {
+    z-index: 0;
+    position:fixed;
+    background-color: #000;
+    background-image: url('../img/photography/bg.jpg');
+    background-size: 1276px;
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
+}
+.page-1 .hero-layer .content img {
+    position: absolute;
+    top: 0%;
+    margin-left:00px;
+}
+
+/* ================ PAINTING PARALLAX ================ */
+.page-2 .background-layer {
+    z-index: 0;
+    position:fixed;
+    background-color: #000;
+    background-image: url('../img/painting/bg.jpg');
+    background-size: 1276px;
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
+}
+.page-2 .hero-layer .content img {
+    position: absolute;
+    top: 0%;
+    margin-left:-20px;
+}
+
+/* ================ ARCHITECTURE PARALLAX ================ */
+.page-3 .background-layer {
+    z-index: 0;
+    position:fixed;
+    background-color: #000;
+    background-image: url('../img/architecture/bg.jpg');
+    background-size: 1464px;
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
+}
+.page-3 .hero-layer .content img {
+    position: absolute;
+    top: 0%;
+    margin-left:-20px;
+}
+/* ================ ANIMATIONS ================ */
+@-webkit-keyframes blip
+{ 
+    0%   {box-shadow: 0px 1px 0px #fff, inset 0px 0px 0px rgba(76,172,251,1);} 
+    15%  {box-shadow: 0px 1px 0px #fff, inset 0px 1px 17px rgba(96,192,271,1);}
+    25%   {box-shadow: 0px 1px 0px #fff, inset 0px 0px 0px rgba(76,172,251,1);} 
+    26%   {box-shadow: 0px 1px 0px #fff, inset 0px 0px 0px rgba(76,172,251,1);} 
+    41%  {box-shadow: 0px 1px 0px #fff, inset 0px 1px 12px rgba(96,192,271,1);}
+    51% {box-shadow: 0px 1px 0px #fff, inset 0px 0px 0px rgba(76,172,251,1);}
+}

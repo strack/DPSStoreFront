@@ -1,0 +1,154 @@
+* {
+    font-family:verdana,tahoma,sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background: #093159; /* Old browsers */
+background: -moz-linear-gradient(top, #093159 0%, #0c2844 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#093159), color-stop(100%,#0c2844)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #093159 0%,#0c2844 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #093159 0%,#0c2844 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #093159 0%,#0c2844 100%); /* IE10+ */
+background: linear-gradient(to bottom, #093159 0%,#0c2844 100%); /* W3C */
+}
+
+div{
+
+}
+
+#top {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    background: #093159 url('logo.png') no-repeat center center;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.8);
+    height: 25px;
+}
+#banner{
+    margin-top: 25px;
+	height:156px;
+	width:320px;
+    background: #ddd url('Logo1.png') no-repeat center center;
+    background-size: contain;
+    margin-bottom: 5px;
+}
+.folioCard{
+	position:relative;
+    float: left;
+    display: inline-block;
+	width: 320px;
+	margin:10px;
+	-webkit-transition: -webkit-transform .1s ease-in-out;
+}
+
+
+.clicky{
+	-webkit-transform: scale(0.95);
+}
+
+
+.moreFolios:after{
+	content: "";
+	position:absolute;
+	bottom:0;
+	right:0;
+   	width: 10px;
+   	height: 100px;
+   	opacity: 0.0;
+   	background-color: green;
+	border:solid 2px green;
+}
+
+.folioTitle{
+    position: relative;
+    top: 0px;
+    left: 15px;
+    margin-bottom: 3px;
+    
+    color: #fff;
+    font-size: 0.65em;
+    
+}
+
+.folioDescription{
+    position: absolute;
+    left: 175px;
+	height:90%;
+    width: 120px;
+    
+    color: #8f9297;
+    font-size: 0.5em;
+}
+
+.previewPane {
+	display:inline-block;
+	float:left;
+	width: 160px;
+	height: 120px;
+	background-size: 100% 100%;
+}
+
+.statusTitle{
+	position:absolute;
+	bottom:0;
+    right:5%;
+	width:30%;
+    height: 1.9em;
+	line-height: 2em;
+	text-align: center;
+	color:#eee;
+	background-color: rgba(119,170,204,0.75);
+}
+}
+
+.thumbTitle{
+    position:absolute;
+    bottom:0;
+    width:160px;
+    height: 1.9em;
+    line-height: 2em;
+    text-align: center;
+    color:#eee;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.progressBarBG{
+    display:none;
+	width:40%;
+	position:absolute;
+	bottom: 13px;
+	background-color: #000;
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.15);
+	height:3px;
+	margin-left:5%;
+    border-radius: 20px;
+
+}
+
+.progressBar{
+	width:10%;
+	height:100%;
+	background-color: #27a9e1;
+    box-shadow: 0px 1px 1px rgba(111,212,255,0.65), 0px 0px 15px 4px rgba(39,169,225,0.4), 0px 0px 5px 1px rgba(39,169,225,0.6), 0px 0px 1px rgba(39,169,225,0.9);
+    border-radius: 20px;
+    
+    animation: glow 1.8s ease-in-out infinite;
+    -webkit-animation: glow 1.8s ease-in-out infinite;
+}
+
+.progressVisible{
+    display:inherit;
+}
+
+@-webkit-keyframes glow
+{ 
+    0%   {background-color: #c9c800; 
+          box-shadow: 0px 1px 1px rgba(111,212,255,0.65), 0px 0px 15px 4px rgba(39,169,225,0.4), 0px 0px 5px 1px rgba(39,169,225,0.6), 0px 0px 1px rgba(39,169,225,0.8);} 
+    25%  {background-color: #deec00; 
+          box-shadow: 0px 1px 1px rgba(123,215,255,0.95), 0px 0px 20px 4px rgba(39,169,225,0.7), 0px 0px 7px 1px rgba(39,169,225,0.9), 0px 0px 3px rgba(39,169,225,1);}
+    100% {background-color: #c9c800; 
+          box-shadow: 0px 1px 1px rgba(111,212,255,0.65), 0px 0px 15px 4px rgba(39,169,225,0.4), 0px 0px 5px 1px rgba(39,169,225,0.6), 0px 0px 1px rgba(39,169,225,0.8);}
+}
