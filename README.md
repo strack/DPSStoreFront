@@ -5,6 +5,8 @@ Adobe DPS Customized Storefront Demo + Assets
 
 For an explanation/walkthrough, download the <a href="https://github.com/strack/DPSStoreFront/blob/master/Assets/CustomStorefrontSlides.pdf?raw=true">PDF Presentation</a>
 
+For an EDU-specific explanation, read the <a href="https://github.com/strack/DPSStoreFront/blob/master/Assets/CustomStorefrontsEDU-v2.pdf?raw=true">EDU Customized Storefronts</a> Presentation
+
 Helpful Links
 =============
 
