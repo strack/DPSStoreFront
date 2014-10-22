@@ -107,6 +107,7 @@ ADOBE.StatusText = function(statusCode)
 		case 100:
 			return 'PURCHASE';
 		case 200:
+        case 'production':
 			return 'DOWNLOAD';
 		case 101:
 			return 'PURCHASING...';

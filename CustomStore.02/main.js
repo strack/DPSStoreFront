@@ -11,7 +11,7 @@ $(document).ready(function() {
 			datatype: "xml",
 			// NOTE: the accountId is critical to getting the correct folio library. 
 			// You will need to modify this accordingly for your new application.
-            url: isAPIAvailable ? "http://www.google.com" | "https://www.dpsapps.com/dps/v2_library_store_templates/fulfillment_proxy.php?accountId=11453163-dbb0-5997-be64-79cb7091f2a1",
+            url: isAPIAvailable ? "http://www.google.com" : "https://www.dpsapps.com/dps/v2_library_store_templates/fulfillment_proxy.php?accountId=11453163-dbb0-5997-be64-79cb7091f2a1",
             data: "",
 			success: function(xhresp,stat) {
 				// Set a flag for the API availability in the ADOBE namespace.

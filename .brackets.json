@@ -1,6 +1,9 @@
 {
     "jscodehints.detectedExclusions": [
         "/Users/istrack/Documents/Projects/Reference/DPSStoreFront/CustomStore.Final/underscore-min.js",
-        "/Users/istrack/Documents/Projects/Reference/DPSStoreFront/CustomStore.02/main.js"
+        "/Users/istrack/Documents/Projects/Reference/DPSStoreFront/CustomStore.02/main.js",
+        "/Library/WebServer/Documents/DPSStoreFront/CustomStore.02/underscore-min.js",
+        "/Library/WebServer/Documents/DPSStoreFront/CustomStore.01/main.js",
+        "/Library/WebServer/Documents/DPSStoreFront/CustomStore.Final/underscore-min.js"
     ]
 }
