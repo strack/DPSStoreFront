@@ -85,7 +85,7 @@ header img {
 .column {
     display: inline-block;
     float: left;
-    width: 280px;
+    width: 253px;
     margin-right: 20px;
 }
 .column:first-child {
@@ -122,39 +122,35 @@ header img {
 .tile h3 {
     margin:0;
     padding: 10px 20px 5px;
-    color: #ca2345;
+    color: #556;
+    -webkit-text-stroke: 0.2px;
+    font-family:open-sans,sans-serif;
+    font-weight:300;
+    font-size:1.1em;
     text-shadow: 0px 1px 0px #fff;
 }
 .tile p {
     margin:0;
     padding: 5px 20px;
-    color: #444;
+    -webkit-text-stroke: 0.1px;
+    color: #344;
+    font-size: 0.7em;
 }
 .tile a.download-button {
     position:absolute;
-    text-align: center;
+    text-align: left;
     bottom:10px;
-    width: 220px;
+    width: 190px;
     margin: 0 10px;
     padding:10px 20px;
     border-radius:3px;
     
-    background: rgb(41,137,216);
-    background: -moz-linear-gradient(top, rgba(41,137,216,1) 10%, rgba(30,87,153,1) 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(41,137,216,1)), color-stop(90%,rgba(30,87,153,1)));
-    background: -webkit-linear-gradient(top, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
-    background: -o-linear-gradient(top, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
-    background: -ms-linear-gradient(top, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
-    background: linear-gradient(to bottom, rgba(41,137,216,1) 10%,rgba(30,87,153,1) 90%);
+    background: #c4c6c8 url('../img/icons/read-ico.png') no-repeat 95% center;
     
-    color: rgba(255,255,255,0.8);
-    font-weight:700;
-    font-size:0.9em;
+    color: #333;
+    font-weight:800;
+    font-size:0.8em;
     letter-spacing:2px;
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
-    
-    animation: blip 5s ease-in-out infinite;
-    -webkit-animation: blip 5s ease-in-out infinite;
     
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -162,24 +158,22 @@ header img {
     transition: all 0.15s ease-in-out;
 }
 .tile a.download-button:active {
-    color: rgba(255,255,255,1);
     
-    background: rgb(41,137,216);
-    background: -moz-linear-gradient(top, rgba(46,142,221,1) 10%, rgba(30,87,153,1) 90%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(46,142,221,1)), color-stop(90%,rgba(30,87,153,1)));
-    background: -webkit-linear-gradient(top, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
-    background: -o-linear-gradient(top, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
-    background: -ms-linear-gradient(top, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
-    background: linear-gradient(to bottom, rgba(46,142,221,1) 10%,rgba(30,87,153,1) 90%);
+    background: #79d;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.15);
+}
+.tile a.download-button.button-spotify {
+background: #c4c6c8 url('../img/icons/rarr.png') no-repeat 95% center;
 }
 .tile.small {
-    height: 210px;
+    height: 190px;
 }
 .tile.medium {
-    height: 420px;
+    height: 400px;
 }
 .tile.big {
-    height: 650px;
+    height: 610px;
 }
 .tile:active {
     background: #fff;
@@ -256,6 +250,36 @@ header img {
     background-position: 0% 0%;
 }
 .page-3 .hero-layer .content img {
+    position: absolute;
+    top: 0%;
+    margin-left:-20px;
+}
+/* ================ DESIGN PARALLAX ================ */
+.page-4 .background-layer {
+    z-index: 0;
+    position:fixed;
+    background-color: #000;
+    background-image: url('../img/design/bg.jpg');
+    background-size: 1228px;
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
+}
+.page-4 .hero-layer .content img {
+    position: absolute;
+    top: 0%;
+    margin-left:-20px;
+}
+/* ================ MUSIC PARALLAX ================ */
+.page-5 .background-layer {
+    z-index: 0;
+    position:fixed;
+    background-color: #000;
+    background-image: url('../img/music/bg.jpg');
+    background-size: 1228px;
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
+}
+.page-5 .hero-layer .content img {
     position: absolute;
     top: 0%;
     margin-left:-20px;
